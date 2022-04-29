@@ -1,8 +1,12 @@
 {
   "scanSettings": {
-    "configMode": "AUTO",
-    "configExternalURL": "",
-    "baseBranches": []
+    "configMode": "EXTERNAL",
+    "configExternalURL": "https://raw.githubusercontent.com/timf-gh-sast/whitesource-config/main/whitesource.config",
+    "baseBranches": [],
+    "enableSAST": "true",
+    "enableLicenseViolations": "true",
+    "enableIaC": "true",
+    "displayLicenseViolations": "true"
   },
   "checkRunSettings": {
     "vulnerableCheckRunConclusionLevel": "failure",
@@ -13,6 +17,7 @@
     "issueType": "DEPENDENCY"
   },
   "remediateSettings": {
+    "extends": ["github>whitesource/merge-confidence:beta","config:base"],
     "workflowRules": {
       "enabled": true
     }
