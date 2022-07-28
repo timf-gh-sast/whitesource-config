@@ -4,6 +4,7 @@
     "configExternalURL": "https://raw.githubusercontent.com/timf-gh-sast/whitesource-config/main/whitesource.config",
     "baseBranches": [],
     "enableSAST": "true",
+    "enableSASTRemediation": true,
     "enableLicenseViolations": "true",
     "enableIaC": "true",
     "displayLicenseViolations": "true"
