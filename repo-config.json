@@ -1,4 +1,4 @@
-{
+{ 
   "scanSettings": {
     "configMode": "EXTERNAL",
     "configExternalURL": "https://raw.githubusercontent.com/timf-gh-sast/whitesource-config/main/whitesource.config",
